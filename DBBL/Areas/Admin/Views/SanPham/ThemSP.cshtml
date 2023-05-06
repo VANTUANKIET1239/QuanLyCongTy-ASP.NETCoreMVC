@@ -1,0 +1,52 @@
+﻿@model SanPham
+@{
+    ViewData["Title"] = "ThemSP";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+    string id = ViewBag.ID;
+    string cty = ViewBag.CTY;
+    int kiet = 1;
+}
+
+
+<div class="row ">
+    <div class="col-md-12">
+        <div class="card w-50 mb-4 mx-auto">
+            <h5 class="card-header">Thêm Sản Phẩm</h5>
+            <div class="card-body">
+                <form id="formAuthentication" class="mb-3" asp-action="ThemSP" method="POST">
+                    <div class="mb-4 form-outline">
+                        <label class="form-label">ID Sản Phẩm</label>
+                        <input type="text" id="idsp" asp-for="IdSp" class="form-control" value="@ViewBag.ID" readonly />
+                    </div>
+                    <div class="mb-4 form-outline">
+                        <label class="form-label">Tên Công Ty</label>
+                        <input type="text" id="gioihan" class="form-control" name="tencty" value="@ViewBag.CTY" readonly />                    
+                    </div>
+                    <div class="mb-4 form-outline">
+                        <label asp-for="TenSp" class="form-label">Tên Sản Phẩm</label>
+                        <input asp-for="TenSp" type="text" id="slt" class="form-control"  />
+                        <span asp-validation-for="TenSp" class="text-danger"></span>
+                    </div>       
+                    <div class="mb-4 form-outline">
+                        <label asp-for="SlHt" class="form-label"> Số Lượng Hiện Tại</label>
+                        <input asp-for="SlHt" type="number" id="slt" class="form-control" />
+                        <span asp-validation-for="SlHt" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4 form-outline">
+                       <label asp-for="GioiHan" class="form-label">Giới Hạn</label>
+                        <input asp-for="GioiHan" type="number" id="slt" class="form-control" />
+                        <span asp-validation-for="GioiHan" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-primary d-grid w-100" type="submit">Thêm Sản Phẩm</button>
+                    </div>
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark d-grid w-100">Hủy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

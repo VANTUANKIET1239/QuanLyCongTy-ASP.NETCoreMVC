@@ -1,0 +1,68 @@
+﻿@model SanPham
+@{
+    ViewData["Title"] = "SuDung";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+}
+
+<div class="row ">
+    <div class="col-md-12">
+        <div class="card w-50 mb-4 mx-auto">
+            <h5 class="card-header">Sử Dụng Sản Phẩm</h5>
+            <div class="card-body">
+                <form id="formAuthentication" class="mb-3" asp-action="SuDung" method="POST">
+                    <input type="hidden" id ="slht" value="@Model.SlHt"/>
+                    <input  type="hidden" asp-for="IdSp" value="@Model.IdSp"/>
+                    <dl class="row">
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.TenSp)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TenSp)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.SlHt)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.SlHt)
+                        </dd>
+                          <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.GioiHan)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.GioiHan)
+                        </dd>
+                    </dl>
+                    <div class="mb-4 form-outline form-password-toggle">
+                        <label class="form-label" >Số Lượng Sử Dụng</label>
+                        <input type="number" id="slsd" class="form-control" name="slsd" aria-describedby="password" />
+                        <span id="slsd-error" class="text-danger"></span>
+                    </div>
+                  
+                    <div class="mb-3">
+                        <button class="btn btn-primary d-grid w-100" type="submit">Xác Nhận</button>
+                    </div>
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark d-grid w-100">Hủy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script >
+    const slsd = document.getElementById("slsd");
+    const slsdError = document.getElementById("slsd-error");
+    const slht = document.getElementById("slht");
+    slsd.addEventListener("input", function () {
+        if (isNaN(slsd.value)) {
+            slsdError.textContent = "Số lượng sử dụng phải là một số";
+        } else if (slsd.value < 0) {
+           slsdError.textContent = "Số lượng sử dụng phải lớn hơn hoặc bằng 0";
+        } else if(slsd.value > slht.value){
+            slsdError.textContent = "Số lượng sử dụng không được vượt quá số lượng hiện tại";
+        }
+        else {
+            slsdError.textContent = "";
+        }
+    });
+</script>

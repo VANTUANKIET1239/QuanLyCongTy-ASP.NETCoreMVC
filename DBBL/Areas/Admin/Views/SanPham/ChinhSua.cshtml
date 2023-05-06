@@ -1,0 +1,87 @@
+﻿@model SanPham
+@{
+    ViewData["Title"] = "ChinhSua";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+}
+
+<div class="row ">
+    <div class="col-md-12">
+        <div class="card w-50 mb-4 mx-auto">
+            <h5 class="card-header">Chỉnh Sửa Sản Phẩm</h5>
+            <div class="card-body">
+                <form id="formAuthentication" class="mb-3" asp-action="ChinhSua" method="POST">
+                    <input type="hidden" asp-for="IdSp" value="@Model.IdSp" />
+                    <dl class="row">
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.TenSp)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TenSp)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.SlHt)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.SlHt)
+                        </dd>
+                      
+                    </dl>
+                    <div class="mb-4 form-outline">
+                        <label class="form-label">Số Lượng Thêm Vào</label>
+                        <input type="number" id="slt" class="form-control" name="slt"  />
+                        <span id="slt-error" class="text-danger"></span>
+                    </div>
+                    <label class="form-label">Giới Hạn</label>
+                    <div class="mb-4 form-outline">                        
+                        <input type="number" id="gioihan" value="@Convert.ToInt32(Model.GioiHan)" style="float:left" class="form-control w-75" name="gh" readonly/>
+                        <button type="button" style="width:110px" id="sua" class="btn btn-warning ms-3 w-20">Sửa</button>
+                        <span id="gioihan-error" class="text-danger"></span>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <button class="btn btn-primary d-grid w-100" type="submit">Xác Nhận</button>
+                    </div>
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark d-grid w-100">Hủy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+    function validateInput(inputField, errorField, errorMessage) {
+        inputField.addEventListener("input", function () {
+            if (isNaN(inputField.value)) {
+                errorField.textContent = errorMessage + " phải là một số";
+            } else if (inputField.value < 0) {
+                errorField.textContent = errorMessage + " phải lớn hơn hoặc bằng 0";
+            } else {
+                errorField.textContent = "";
+            }
+        });
+    }  
+    const slt = document.getElementById("slt");
+    const sltError = document.getElementById("slt-error");
+    const gioihan = document.getElementById("gioihan");
+    const gioihanError = document.getElementById("gioihan-error");
+    const btnsua = document.getElementById("sua");
+    validateInput(slt, sltError, "Số lượng sử dụng");
+    validateInput(gioihan, gioihanError, "Giới hạn");
+    var k = true;
+    btnsua.addEventListener("click", function(){
+           if(k){
+            gioihan.readOnly = false;
+            k = false;
+            btnsua.textContent = "Hủy"
+        }
+        else{
+            gioihan.readOnly = true;
+            k = true;
+            btnsua.textContent  = "Sửa"
+        }
+    });
+
+
+</script>

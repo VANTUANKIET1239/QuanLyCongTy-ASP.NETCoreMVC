@@ -1,0 +1,67 @@
+﻿@model List<NhanVien>
+@{
+    ViewData["Title"] = "NhanVien";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h3 class="text-primary"> Danh Sách Nhân Viên</h3>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-area="Admin" asp-controller="NhanVien" asp-action="ThemNV" class="btn btn-primary">
+                <i class='bx bxs-message-square-add'></i> &nbsp; Thêm Nhân Viên
+            </a>
+        </div>
+    </div>
+    <br />
+
+
+    <!-- Basic Bootstrap Table -->
+    <div class="card">
+        @*table-responsive*@
+        <div class="text-nowrap">
+            <table class="table">
+                <thead class="text-center mx-auto">
+                    <tr>
+                        <th>ID Nhân Viên</th>
+                        <th>Tên Nhân Viên</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Email</th>
+                        <th>Tùy Chọn</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0 text-center mx-auto">
+                    @foreach (var a in Model)
+                    {
+                        <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@a.IdNv</strong></td>
+                            <td>@a.TenNv</td>
+                            <td>
+                                @a.SđtNv
+                            </td>
+                            <td><span>@a.EmailNv</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                        <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="NhanVien" asp-route-id="@a.IdNv" asp-action="Details"><i class="bx bx-detail me-1"></i> Xem Thông Tin</a>
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="NhanVien" asp-route-id="@a.IdNv" asp-action="Xoa"><i class="bx bx-trash me-1"></i> Xóa</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <!--/ Basic Bootstrap Table -->
+</div>
+
+

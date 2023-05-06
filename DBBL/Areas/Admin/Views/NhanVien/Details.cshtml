@@ -1,0 +1,60 @@
+﻿@model NhanVien
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+}
+
+<div class="row ">
+    <div class="col-md-12">
+        <div class="card w-50 mb-4 mx-auto">
+            <h5 class="card-header">Thông Tin Nhân Viên</h5>
+            <div class="card-body">
+                <form id="formAuthentication" class="mb-3" asp-action="SuDung" method="POST">
+                @*    <input type="hidden" id="slht" value="@Model.SlHt" />
+                    <input type="hidden" asp-for="IdSp" value="@Model.IdSp" />*@
+                    <dl class="row">
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.IdNv)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.IdNv)
+                        </dd>
+                        <dt class="col-sm-6">
+                            Tên Công Ty
+                        </dt>
+                        <dd class="col-sm-6">
+                            @ViewBag.CTY
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.TenNv)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TenNv)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.EmailNv)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.EmailNv)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.SđtNv)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.SđtNv)
+                        </dd>
+                    </dl>
+                
+                    <div class="mb-4 form-outline">
+                        <label asp-for="Mk" class="form-label"></label>
+                        <input type="password" id="slsd" class="form-control w-50" name="slsd" value="@Model.Mk" readonly/>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="NhanVien" class="btn btn-outline-dark d-grid w-100">Hủy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

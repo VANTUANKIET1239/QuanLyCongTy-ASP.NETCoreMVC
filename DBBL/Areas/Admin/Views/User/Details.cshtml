@@ -1,0 +1,56 @@
+﻿@model CongTy
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml";
+}
+
+<div class="row ">
+    <div class="col-md-12">
+        <div class="card w-50 mb-4 mx-auto">
+            <h5 class="card-header">Thông Tin Admin</h5>
+            <div class="card-body">
+                <form id="formAuthentication" class="mb-3" asp-action="SuDung" method="POST">
+                    @*    <input type="hidden" id="slht" value="@Model.SlHt" />
+                    <input type="hidden" asp-for="IdSp" value="@Model.IdSp" />*@
+                    <dl class="row">
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.TenCt)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TenCt)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.TenNql)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.TenNql)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.SđtNql)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.SđtNql)
+                        </dd>
+                        <dt class="col-sm-6">
+                            @Html.DisplayNameFor(model => model.EmailNql)
+                        </dt>
+                        <dd class="col-sm-6">
+                            @Html.DisplayFor(model => model.EmailNql)
+                        </dd>
+                        
+                    </dl>
+
+                    <div class="mb-4 form-outline">
+                        <label asp-for="Mk" class="form-label"></label>
+                        <input type="password" id="slsd" class="form-control w-50" name="slsd" value="@Model.Mk" readonly />
+
+                    </div>
+                    <div class="mb-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark d-grid w-100">Hủy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+﻿@model NhanVien
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="row signup">
+        <div class="col-12">
+            <div class="card w-50 mb-4 mx-auto">
+                <h5 class="card-header">Đăng Nhập</h5>
+                <div class="card-body">
+                    <form id="formAuthentication" class="mb-3" asp-action="Login" method="POST">
+
+                        <div class="form-outline mb-4">
+                            <label asp-for="EmailNv" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" asp-for="EmailNv" placeholder="Enter your email or username" autofocus>
+                            <span asp-validation-for="EmailNv" class="text-danger"></span>
+                        </div>
+                        <div class="mb-4 form-outline form-password-toggle">
+                            <label class="form-label" asp-for="Mk">Mật Khẩu</label>
+                            <input type="password" id="password" class="form-control" asp-for="Mk" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                            <span asp-validation-for="Mk" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary d-grid w-100" type="submit">Đăng Nhập</button>
+                        </div>
+                    </form>
+
+                    <p class="text-center">
+                        <span>New on our platform?</span>
+                        <a href="auth-register-basic.html">
+                            <span>Create an account</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

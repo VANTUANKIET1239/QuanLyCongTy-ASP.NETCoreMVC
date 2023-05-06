@@ -29,16 +29,16 @@ public partial class DbdlContext : DbContext
     {
         modelBuilder.Entity<CongTy>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("CONG_TY");
+            entity.HasKey(e => e.IdCt);
 
-            entity.Property(e => e.EmailNql)
-                .HasMaxLength(150)
-                .HasColumnName("Email_NQL");
+            entity.ToTable("CONG_TY");
+
             entity.Property(e => e.IdCt)
                 .HasMaxLength(50)
                 .HasColumnName("ID_CT");
+            entity.Property(e => e.EmailNql)
+                .HasMaxLength(150)
+                .HasColumnName("Email_NQL");
             entity.Property(e => e.Mk).HasColumnName("MK");
             entity.Property(e => e.SđtNql)
                 .HasMaxLength(100)
@@ -53,19 +53,19 @@ public partial class DbdlContext : DbContext
 
         modelBuilder.Entity<NhanVien>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("NHAN_VIEN");
+            entity.HasKey(e => e.IdNv);
 
+            entity.ToTable("NHAN_VIEN");
+
+            entity.Property(e => e.IdNv)
+                .HasMaxLength(50)
+                .HasColumnName("ID_NV");
             entity.Property(e => e.EmailNv)
                 .HasMaxLength(150)
                 .HasColumnName("EMAIL_NV");
             entity.Property(e => e.IdCt)
                 .HasMaxLength(50)
                 .HasColumnName("ID_CT");
-            entity.Property(e => e.IdNv)
-                .HasMaxLength(50)
-                .HasColumnName("ID_NV");
             entity.Property(e => e.Mk).HasColumnName("MK");
             entity.Property(e => e.SđtNv)
                 .HasMaxLength(100)
@@ -73,14 +73,18 @@ public partial class DbdlContext : DbContext
             entity.Property(e => e.TenNv)
                 .HasMaxLength(150)
                 .HasColumnName("Ten_NV");
+            entity.Property(e => e.Trangthai).HasColumnName("trangthai");
         });
 
         modelBuilder.Entity<SanPham>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("SAN_PHAM");
+            entity.HasKey(e => e.IdSp);
 
+            entity.ToTable("SAN_PHAM");
+
+            entity.Property(e => e.IdSp)
+                .HasMaxLength(50)
+                .HasColumnName("ID_SP");
             entity.Property(e => e.GioiHan)
                 .HasMaxLength(20)
                 .IsFixedLength()
@@ -88,9 +92,6 @@ public partial class DbdlContext : DbContext
             entity.Property(e => e.IdCt)
                 .HasMaxLength(50)
                 .HasColumnName("ID_CT");
-            entity.Property(e => e.IdSp)
-                .HasMaxLength(50)
-                .HasColumnName("ID_SP");
             entity.Property(e => e.SlHt)
                 .HasMaxLength(20)
                 .IsFixedLength()
@@ -98,6 +99,7 @@ public partial class DbdlContext : DbContext
             entity.Property(e => e.TenSp)
                 .HasMaxLength(150)
                 .HasColumnName("Ten_SP");
+            entity.Property(e => e.Trangthai).HasColumnName("trangthai");
         });
 
         OnModelCreatingPartial(modelBuilder);
