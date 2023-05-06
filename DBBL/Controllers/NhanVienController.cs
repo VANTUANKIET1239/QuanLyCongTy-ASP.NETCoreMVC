@@ -73,8 +73,8 @@ namespace DBBL.Controllers
         }
         public IActionResult Details()
         {
-            string id = HttpContext.Session.GetString("id");
-            string idct = HttpContext.Session.GetString("idct");
+            string? id = HttpContext.Session.GetString("id");
+            string? idct = HttpContext.Session.GetString("idct");
             var us = _db.NhanViens.Where(x => x.Trangthai == true).FirstOrDefault(x => x.IdNv.Equals(id));
             string? cty = _db.CongTies.FirstOrDefault(x => x.IdCt.Equals(idct)).TenCt;
             ViewBag.CTY = cty;

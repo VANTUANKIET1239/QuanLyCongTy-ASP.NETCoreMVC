@@ -1,5 +1,6 @@
 ﻿using DBBL.Models;
 using Microsoft.AspNetCore.Mvc;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace DBBL.Areas.Admin.Controllers
 {
@@ -39,7 +40,7 @@ namespace DBBL.Areas.Admin.Controllers
         public IActionResult ChinhSua([FromForm] int slt, [FromForm] int gh, string IdSp)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
-            spdc.SlHt = (Convert.ToInt32(spdc.SlHt) + slt).ToString();
+            spdc.SlHt = (Convert.ToInt32(spdc.SlHt) + slt).ToString();           
             spdc.GioiHan = gh.ToString();
             _db.SanPhams.Update(spdc);
             _db.SaveChanges();

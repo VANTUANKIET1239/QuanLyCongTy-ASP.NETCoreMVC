@@ -4,6 +4,7 @@ using Twilio;
 using Twilio.Clients;
 using Twilio.Rest.Api.V2010.Account;
 
+
 namespace DBBL.Controllers
 {
     public class SanPhamController : Controller
@@ -25,32 +26,26 @@ namespace DBBL.Controllers
         {
             var sp = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
             sp.SlHt = (Convert.ToInt32(sp.SlHt) - slsd).ToString();
-            HttpContext.Session.SetString("slht", sp.SlHt);
-            HttpContext.Session.SetString("gioihan", sp.GioiHan);
+            if (Convert.ToInt32(sp.SlHt) <= Convert.ToInt32(sp.GioiHan))
+            {
+                string tn = $"Số lượng hiện tại của {sp.TenSp} đã dưới mức giới hạn, cần phải được thêm";
+                var ad = _db.CongTies.FirstOrDefault(x => x.IdCt.Equals(HttpContext.Session.GetString("idct").Trim()));
+                string sdtadmin = "+84" + ad.SđtNql.Substring(1);
+                string mail = ad.EmailNql;
+                Sms.SendSmsAdmin(tn, sdtadmin);
+                Sms.SendEmail(mail, "hehe m lo mà đi mua thêm đồ đi", $"Số lượng hiện tại của {sp.TenSp} đã dưới mức giới hạn, cần phải được thêm");
+            }
             _db.SanPhams.Update(sp);
             _db.SaveChanges();
-            SentSms();
-           // TempData["success"] = "Xác Nhận Sử Dụng Thành Công";
-           
+            
+          
+            TempData["success"] = "Xác Nhận Sử Dụng Thành Công";
+
             return RedirectToAction("HienSanPham", "Home");
 
 
         }
-
-        [NonAction]
-        public void SentSms()
-        {
-            var accountSid = "ACe28d2a6273ec626f6eccfcd1e43e41df";
-            var authToken = "cc51b943e3fbafcf10d78efd0bc7b8db";
-            TwilioClient.Init(accountSid, authToken);
-
-            var message = MessageResource.Create(
-                from: new Twilio.Types.PhoneNumber("+13204082422"),
-                to: new Twilio.Types.PhoneNumber("+84906889483"),
-                body: "Đây là tôi Kiệt"
-            );
-            ViewData["success"] = message.Sid;
-
-        }
+        
+        
     }
 }

@@ -1,6 +1,8 @@
 ﻿using DBBL.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace DBBL.Controllers
 {
@@ -20,6 +22,7 @@ namespace DBBL.Controllers
         }
         public IActionResult HienSanPham()
         {
+           
             string? idct = HttpContext.Session.GetString("idct");
             if (string.IsNullOrEmpty(idct))
             {
