@@ -10,7 +10,7 @@ namespace DBBL
         public static void SendSmsAdmin(string text, string sdtnguoinhan)
         {
             var accountSid = "ACb7afff6b5eda88bb63542079699eb8cf";
-            var authToken = "ee5136ffeca2a47b9f07e2ff80478def";
+            var authToken = "8382579716d0b17ea00e0f0ce7d141d9";
             TwilioClient.Init(accountSid, authToken);
 
             var message = MessageResource.Create(

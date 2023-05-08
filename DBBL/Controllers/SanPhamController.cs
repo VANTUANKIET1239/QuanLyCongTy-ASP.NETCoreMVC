@@ -33,7 +33,7 @@ namespace DBBL.Controllers
                 string sdtadmin = "+84" + ad.SđtNql.Substring(1);
                 string mail = ad.EmailNql;
                 Sms.SendSmsAdmin(tn, sdtadmin);
-                Sms.SendEmail(mail, "hehe m lo mà đi mua thêm đồ đi", $"Số lượng hiện tại của {sp.TenSp} đã dưới mức giới hạn, cần phải được thêm");
+                Sms.SendEmail(mail, "Thông báo Sản Phẩm", $"Số lượng hiện tại của {sp.TenSp} đã dưới mức giới hạn, cần phải được thêm");
             }
             _db.SanPhams.Update(sp);
             _db.SaveChanges();
