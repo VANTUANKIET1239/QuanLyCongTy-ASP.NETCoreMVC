@@ -1,6 +1,7 @@
 ﻿@inject IHttpContextAccessor HttpContextAccessor
 @{
     string? username = HttpContextAccessor.HttpContext.Session.GetString("username");
+    
 }
 
 <!DOCTYPE html>

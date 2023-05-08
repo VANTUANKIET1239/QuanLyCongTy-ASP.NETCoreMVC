@@ -10,41 +10,41 @@
             <h5 class="card-header">Thêm Nhân Viên</h5>
             <div class="card-body">
                 <form id="formAuthentication" class="mb-3" asp-action="ThemNV" method="POST">
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label class="form-label">ID Nhân Viên</label>
                         <input type="text" id="idsp" asp-for="IdNv" class="form-control" value="@ViewBag.ID" readonly />
                     </div>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label class="form-label">Tên Công Ty</label>
                         <input type="text" id="gioihan" class="form-control" name="tencty" value="@ViewBag.CTY" readonly />
                     </div>
-                     <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label asp-for="TenNv" class="form-label"></label>
                         <input asp-for="TenNv" type="text" id="slt" class="form-control" />
                         <span asp-validation-for="TenNv" class="text-danger"></span>
                     </div>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label asp-for="SđtNv" class="form-label"></label>
                         <input asp-for="SđtNv" type="text" id="slt" class="form-control" />
                         <span asp-validation-for="SđtNv" class="text-danger"></span>
                     </div>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label asp-for="EmailNv" class="form-label"> </label>
                         <input asp-for="EmailNv" type="email" id="slt" class="form-control" />
                         <span asp-validation-for="EmailNv" class="text-danger"></span>
                     </div>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label asp-for="Mk" class="form-label"></label>
                         <input asp-for="Mk" type="password" id="slt" class="form-control" />
                         <span asp-validation-for="Mk" class="text-danger"></span>
                     </div>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label for="xacnhanmk" class="form-label"> Xác Nhận Mật Khẩu</label>
                         <input name="xacnhanmk" type="password" id="slt" class="form-control" />
                     </div>
 
                     <div class="mb-3">
-                        <button class="btn btn-primary d-grid w-100" type="submit">Thêm Nhân Viên</button>
+                        <button class="role d-grid w-100" type="submit">Thêm Nhân Viên</button>
                     </div>
                     <div class="mb-3">
                         <a asp-controller="Home" asp-action="NhanVien" class="btn btn-outline-dark d-grid w-100">Hủy</a>

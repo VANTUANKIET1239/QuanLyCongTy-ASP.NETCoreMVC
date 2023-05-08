@@ -26,20 +26,20 @@
                         </dd>
                       
                     </dl>
-                    <div class="mb-4 form-outline">
+                    <div class="mb-4 form-outline form-control1">
                         <label class="form-label">Số Lượng Thêm Vào</label>
-                        <input type="number" id="slt" class="form-control" name="slt"  />
+                        <input type="number" id="slt" name="slt"  />
                         <span id="slt-error" class="text-danger"></span>
                     </div>
                     <label class="form-label">Giới Hạn</label>
-                    <div class="mb-4 form-outline">                        
+                    <div class="mb-4 form-outline form-control1">
                         <input type="number" id="gioihan" value="@Convert.ToInt32(Model.GioiHan)" style="float:left" class="form-control w-75" name="gh" readonly/>
                         <button type="button" style="width:110px" id="sua" class="btn btn-warning ms-3 w-20">Sửa</button>
                         <span id="gioihan-error" class="text-danger"></span>
                     </div>
                    
                     <div class="mb-3">
-                        <button class="btn btn-primary d-grid w-100" type="submit">Xác Nhận</button>
+                        <button class="role d-grid w-100" type="submit">Xác Nhận</button>
                     </div>
                     <div class="mb-3">
                         <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark d-grid w-100">Hủy</a>
