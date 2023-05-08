@@ -42,6 +42,15 @@ namespace DBBL.Areas.Admin.Controllers
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
             spdc.SlHt = (Convert.ToInt32(spdc.SlHt) + slt).ToString();           
             spdc.GioiHan = gh.ToString();
+            if (Convert.ToUInt32(spdc.SlHt) > Convert.ToInt32(spdc.GioiHan)){
+                List<NhanVien> kiet = _db.NhanViens.Where(x => x.Trangthai == true && x.IdCt.Equals(HttpContext.Session.GetString("id"))).ToList();
+                for(int i = 0; i< kiet.Count; i++)
+                {
+                    string tn = $"Sản phẩm {spdc.TenSp} đã được thêm vào với số lượng {slt}";
+                    string subject = "THÔNG BÁO THÊM SẢN PHẨM";
+                    Sms.SendEmail(kiet[i].EmailNv, subject, tn);
+                }
+            }
             _db.SanPhams.Update(spdc);
             _db.SaveChanges();
             TempData["success"] = "Chỉnh Sửa Thành Công";
