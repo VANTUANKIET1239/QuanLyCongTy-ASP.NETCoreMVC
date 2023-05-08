@@ -23,7 +23,7 @@ public partial class DbdlContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-C8QS4QI;Database=DBDL;Trusted_Connection=True;encrypt=false");
+        => optionsBuilder.UseSqlServer("Server=aws-group01-db.ccbblrpbsnn3.us-east-1.rds.amazonaws.com;Database=DBDL;TrustServerCertificate=True;Integrated Security=false;User ID=admin;Password=Group012023;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

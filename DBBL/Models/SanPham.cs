@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace DBBL.Models;
 
@@ -17,5 +16,4 @@ public partial class SanPham
     public string GioiHan { get; set; } = null!;
 
     public bool? Trangthai { get; set; }
-
 }

@@ -9,141 +9,141 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DBBL
 build_property.RootNamespace = DBBL
-build_property.ProjectDir = D:\00.ki 2 nam 3\điện toán đám mây\CloudDungDe\DBBL\
+build_property.ProjectDir = C:\Users\hungs\source\repos\DBBL\DBBL\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\00.ki 2 nam 3\điện toán đám mây\CloudDungDe\DBBL
+build_property.MSBuildProjectDirectory = C:\Users\hungs\source\repos\DBBL\DBBL
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Home/NhanVien.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Home/NhanVien.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxOaGFuVmllbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/NhanVien/Details.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/NhanVien/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/NhanVien/ThemNV.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/NhanVien/ThemNV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cVGhlbU5WLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/NhanVien/Xoa.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/NhanVien/Xoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cWG9hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/SanPham/ChinhSua.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/SanPham/ChinhSua.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxDaGluaFN1YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/SanPham/SuDung.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/SanPham/SuDung.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxTdUR1bmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/SanPham/ThemSP.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/SanPham/ThemSP.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxUaGVtU1AuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/SanPham/Xoa.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/SanPham/Xoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxYb2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Shared/Error.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Shared/Nofitication.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Shared/Nofitication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXE5vZml0aWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Shared/ViewHomeAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFZpZXdIb21lQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/User/Details.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/User/Login.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Home/HienSanPham.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Home/HienSanPham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaWVuU2FuUGhhbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Home/Index.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Home/Privacy.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Home/Roles.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Home/Roles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSb2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/NhanVien/Details.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/NhanVien/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/NhanVien/Index.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/NhanVien/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/NhanVien/Login.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/NhanVien/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/SanPham/SuDung.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/SanPham/SuDung.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxTdUR1bmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Shared/Error.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Shared/Nofitication.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Shared/Nofitication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vZml0aWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Shared/ViewHomeNV.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Shared/ViewHomeNV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZpZXdIb21lTlYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/_ViewImports.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/_ViewStart.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-9id9eclmkd
 
-[D:/00.ki 2 nam 3/điện toán đám mây/CloudDungDe/DBBL/Views/Shared/_Layout.cshtml]
+[C:/Users/hungs/source/repos/DBBL/DBBL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6n49lwp030
