@@ -30,6 +30,16 @@ namespace DBBL
             smtpClient.Send(mailMessage);
             int kiet = 0;
         }
-
+     /*   public  void SendEmail(string id,string quyen)
+        {
+            string? idct = HttpContext.Session.GetString("id");
+            if (idct == null)
+            {
+                TempData["error"] = "Phiên Đăng Nhập Hết Hạn, Cần Đăng Nhập Lại";
+                return RedirectToAction("Login", quyen);
+            }
+        }*/
     }
+   
+
 }

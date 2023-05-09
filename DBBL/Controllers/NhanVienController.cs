@@ -71,6 +71,7 @@ namespace DBBL.Controllers
             HttpContext.Session.Remove("idct");
             return RedirectToAction("Login", "NhanVien");
         }
+        [SessionFilter]
         public IActionResult Details()
         {
             string? id = HttpContext.Session.GetString("id");

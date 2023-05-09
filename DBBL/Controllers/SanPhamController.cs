@@ -15,6 +15,7 @@ namespace DBBL.Controllers
         {
             _db = db;
         }
+        [SessionFilter]
         public IActionResult SuDung(string id)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(id.Trim()));
@@ -22,6 +23,7 @@ namespace DBBL.Controllers
         }
        
         [HttpPost]
+        [SessionFilter]
         public IActionResult SuDung([FromForm] int slsd, string IdSp)
         {
             var sp = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));

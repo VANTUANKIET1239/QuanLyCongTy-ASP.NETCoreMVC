@@ -1,3 +1,4 @@
+using DBBL;
 using DBBL.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -25,10 +26,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseSession();
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 
 app.UseAuthorization();
 app.UseEndpoints(endpoints =>
@@ -45,5 +49,5 @@ app.UseEndpoints(endpoints =>
 /*app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");*/
-
+/*app.UseMiddleware<SessionMiddleware>();*/
 app.Run();

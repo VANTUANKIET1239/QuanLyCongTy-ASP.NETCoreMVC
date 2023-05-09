@@ -16,6 +16,7 @@ namespace DBBL.Areas.Admin.Controllers
         {
             _db = db;
         }
+        [SessionFilter]
         public IActionResult ThemNV()
         {
             string? idct = HttpContext.Session.GetString("id");
@@ -27,6 +28,7 @@ namespace DBBL.Areas.Admin.Controllers
            
         }
         [HttpPost]
+        [SessionFilter]
         public IActionResult ThemNV([FromForm]string xacnhanmk, NhanVien nv)
         {
             string? idct = HttpContext.Session.GetString("id");
@@ -63,6 +65,7 @@ namespace DBBL.Areas.Admin.Controllers
             }
             return View(nv);
         }
+        [SessionFilter]
         public IActionResult Details(string id)
         {
             string? idct = HttpContext.Session.GetString("id");
@@ -71,6 +74,7 @@ namespace DBBL.Areas.Admin.Controllers
             ViewBag.CTY = tencty;          
             return View(nv);
         }
+        [SessionFilter]
         public IActionResult Xoa(string id)
         {
             string? idct = HttpContext.Session.GetString("id");

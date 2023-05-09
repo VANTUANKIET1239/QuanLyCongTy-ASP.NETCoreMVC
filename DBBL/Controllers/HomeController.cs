@@ -20,6 +20,7 @@ namespace DBBL.Controllers
         {
            return View();
         }
+        [SessionFilter]
         public IActionResult HienSanPham()
         {
            

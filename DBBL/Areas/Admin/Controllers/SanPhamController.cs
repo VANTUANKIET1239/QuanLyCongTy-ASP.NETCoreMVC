@@ -13,12 +13,14 @@ namespace DBBL.Areas.Admin.Controllers
         {
             _db = db;
         }
+        [SessionFilter]
         public IActionResult SuDung(string id)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(id.Trim()));
             return View(spdc);
         }
         [HttpPost]
+        [SessionFilter]
         public IActionResult SuDung([FromForm] int slsd, string IdSp)
         {
             var sp = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
@@ -30,6 +32,7 @@ namespace DBBL.Areas.Admin.Controllers
 
 
         }
+        [SessionFilter]
         public IActionResult ChinhSua(string id)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(id.Trim()));
@@ -37,6 +40,7 @@ namespace DBBL.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [SessionFilter]
         public IActionResult ChinhSua([FromForm] int slt, [FromForm] int gh, string IdSp)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
@@ -52,12 +56,13 @@ namespace DBBL.Areas.Admin.Controllers
                     Sms.SendEmail(kiet[i].EmailNv, subject, tn);
                 }
             }
+
             _db.SanPhams.Update(spdc);
             _db.SaveChanges();
             TempData["success"] = "Chỉnh Sửa Thành Công";
             return RedirectToAction("Index", "Home");
         }
-       
+        [SessionFilter]
         public IActionResult Xoa(string id)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(id.Trim()));
@@ -66,6 +71,7 @@ namespace DBBL.Areas.Admin.Controllers
 
         [HttpPost]
         [ActionName("Xoa")]
+        [SessionFilter]
         public IActionResult XoaSP(string IdSp)
         {
             var spdc = _db.SanPhams.FirstOrDefault(x => x.IdSp.Trim().Equals(IdSp.Trim()));
@@ -75,7 +81,7 @@ namespace DBBL.Areas.Admin.Controllers
             TempData["success"] = "Xóa Thành Công";
             return RedirectToAction("Index", "Home");
         }
-
+        [SessionFilter]
         public IActionResult ThemSP()
         {
             string? idct = HttpContext.Session.GetString("id");
@@ -87,6 +93,7 @@ namespace DBBL.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [SessionFilter]
         public IActionResult ThemSP(SanPham sp)
         {
             

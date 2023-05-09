@@ -28,6 +28,11 @@ namespace DBBL.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Login( string EmailNql, string Mk)
         {
+            if (EmailNql == null || Mk == null)        
+            {
+                ModelState.AddModelError("EmailNql", "Email không được để trống");
+                return View();
+            }
             var ctyus = _db.CongTies.FirstOrDefault(x => x.EmailNql.Trim() == EmailNql.Trim());
             if(ctyus == null) 
             {
@@ -71,6 +76,7 @@ namespace DBBL.Areas.Admin.Controllers
             HttpContext.Session.Remove("id");
             return RedirectToAction("Login", "User");
         }
+        [SessionFilter]
         public IActionResult Details()
         {
             string idct = HttpContext.Session.GetString("id");
