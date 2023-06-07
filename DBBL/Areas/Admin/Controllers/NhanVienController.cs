@@ -19,7 +19,7 @@ namespace DBBL.Areas.Admin.Controllers
         public IActionResult ThemNV()
         {
             string? idct = HttpContext.Session.GetString("id");
-            var sp = _db.NhanViens.Where(x => x.Trangthai == true && x.IdCt.Equals(idct)).ToList();            
+            var sp = _db.NhanViens.Where(x => x.IdCt.Equals(idct)).ToList();            
             string tencty = _db.CongTies.FirstOrDefault(x => x.IdCt.Trim().Equals(idct.Trim())).TenCt;
             ViewBag.ID = "NV" + idct +(sp.Count + 1).ToString("00");
             ViewBag.CTY = tencty;
@@ -34,6 +34,7 @@ namespace DBBL.Areas.Admin.Controllers
             {
                 ModelState.AddModelError("Mk", "Mật Khẩu không khớp");
             }
+            ModelState.Remove("IdCt");
             if (ModelState.IsValid)
             {
                 byte[] inputBytes = Encoding.UTF8.GetBytes(xacnhanmk);

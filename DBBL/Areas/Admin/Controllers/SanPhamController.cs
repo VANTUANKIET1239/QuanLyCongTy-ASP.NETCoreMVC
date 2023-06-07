@@ -79,7 +79,7 @@ namespace DBBL.Areas.Admin.Controllers
         public IActionResult ThemSP()
         {
             string? idct = HttpContext.Session.GetString("id");
-            var sp = _db.SanPhams.Where(x => x.Trangthai == true && x.IdCt.Equals(idct)).ToList();          
+            var sp = _db.SanPhams.Where(x => x.IdCt.Equals(idct)).ToList();          
             string tencty = _db.CongTies.FirstOrDefault(x => x.IdCt.Trim().Equals(idct.Trim())).TenCt;
             ViewBag.ID = "SP" + idct + (sp.Count + 1).ToString("00");
             ViewBag.CTY = tencty;
@@ -89,12 +89,12 @@ namespace DBBL.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult ThemSP(SanPham sp)
         {
-            
-           
+
+            ModelState.Remove("IdCt");
             if (ModelState.IsValid)
             {
                 string? idct = HttpContext.Session.GetString("id");
-                sp.IdCt = idct;
+                sp.IdCt = idct;                
                 _db.SanPhams.Add(sp);
                 _db.SaveChanges();
                 TempData["success"] = "Thêm Sản Phẩm Thành Công";

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "OasWem1XrAqVwhh0V3B7xIr3Edwd9AT+72LcJFpzpnNBJNyHtZ0CmlJeNZNm+tJo9VPiQO3czhtDZqX862UbMw==",
   "success": true,
   "projectFilePath": "D:\\00.ki 2 nam 3\\điện toán đám mây\\CloudDungDe\\DBBL\\DBBL.csproj",
+=======
+  "dgSpecHash": "ZtymmVD0PGzft30kEelbOSLVf+QvCODV9yqTy5+HymbCGvFpln46RbOo+jud3Pvw+YG/BDtNjzjC00GMYtA6eg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\DBBL.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

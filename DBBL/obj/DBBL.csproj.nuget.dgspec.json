@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "D:\\00.ki 2 nam 3\\điện toán đám mây\\CloudDungDe\\DBBL\\DBBL.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "D:\\00.ki 2 nam 3\\điện toán đám mây\\CloudDungDe\\DBBL\\DBBL.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
         "outputPath": "D:\\00.ki 2 nam 3\\điện toán đám mây\\CloudDungDe\\DBBL\\obj\\",
+=======
+    "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\DBBL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\DBBL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\DBBL.csproj",
+        "projectName": "DBBL",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\DBBL.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\CloudDungDe\\DBBL\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

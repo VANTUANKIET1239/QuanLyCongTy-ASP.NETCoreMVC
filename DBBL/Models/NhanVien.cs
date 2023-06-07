@@ -18,4 +18,17 @@ public partial class NhanVien
 
     public bool? Trangthai { get; set; }
 
+<<<<<<< Updated upstream
+=======
+    public NhanVien()
+    {
+        IdNv = "";
+        TenNv = "";
+        SđtNv = "";
+        EmailNv = "";
+        IdCt = "";
+        Mk = "";
+        Trangthai = true;
+    }
+>>>>>>> Stashed changes
 }

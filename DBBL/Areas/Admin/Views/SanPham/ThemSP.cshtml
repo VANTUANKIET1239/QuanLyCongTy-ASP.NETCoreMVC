@@ -14,6 +14,7 @@
             <h5 class="card-header">Thêm Sản Phẩm</h5>
             <div class="card-body">
                 <form id="formAuthentication" class="mb-3" asp-action="ThemSP" method="POST">
+                    <input type="hidden" asp-for="IdCt" value="" />
                     <div class="mb-4 form-outline">
                         <label class="form-label">ID Sản Phẩm</label>
                         <input type="text" id="idsp" asp-for="IdSp" class="form-control" value="@ViewBag.ID" readonly />

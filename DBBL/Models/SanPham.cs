@@ -18,4 +18,16 @@ public partial class SanPham
 
     public bool? Trangthai { get; set; }
 
+<<<<<<< Updated upstream
+=======
+    public SanPham()
+    {
+        IdSp = "";
+        IdCt = "";
+        TenSp = "";
+        SlHt = "0";
+        GioiHan = "0";
+        Trangthai = true;
+    }
+>>>>>>> Stashed changes
 }
